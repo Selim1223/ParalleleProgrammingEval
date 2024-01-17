@@ -16,11 +16,9 @@ class Program
 
         Console.WriteLine("Traitement des fichiers en parallèle...");
 
-        // Tâches pour le fichier Eval_file1
         Task<int> wordCountFile1Task = CountWordsAsync("Eval_file1.txt");
         Task<int> loremIpsumCountFile1Task = CountOccurrencesAsync("Eval_file1.txt", "Lorem ipsum");
 
-        // Tâches pour le fichier Eval_file2
         Task<int> wordCountFile2Task = CountWordsAsync("Eval_file2.txt");
         Task<int> loremIpsumCountFile2Task = CountOccurrencesAsync("Eval_file2.txt", "Lorem ipsum");
 
